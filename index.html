@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>ECO - PARTY</title/>
+        <link rel="stylesheet" href="source/css/style.css"/>
+        <script type="module">
+            import onColorSelect from "/source/js/seleccionvasos.js"
+            window.onColorSelect = onColorSelect
+        </script>
+        <link  rel="icon" href="source/img/logo.png" type="image/png" />
+    </head>
+    <body>
+        <header>
+            <a href="../../index.html"><img src="source/img/logo_ext.png" alt="Logo"/></a>
+        </header>
+        <nav>
+            <ul id="menu">
+                <a href="source/document/construction.html"><li>Sitio Web</li></a>
+                <a href="source/document/construction.html"><li>Quienes Somos</li></a>
+                <a href="source/document/construction.html"><li>Cesta</li></a>
+                <a href="source/document/construction.html"><li>Inicio de sesion</li></a>
+            </ul>
+        </nav>
+        <aside>
+            Esta página se encuentra en costruccion, se puede experimentar fallos o errores e incluso faltas de elementos.
+        </aside>
+        <div class="contet">
+            <form class="colores">
+                <h2>Vasoso de Cartón</h2>
+                <img src="/source/img/vaso2.png" alt="">
+                <div class="row">
+                    <label>
+                        <span>Normal</span>
+                        <input type="radio" name="vacarton"  style="--color:#9f8e84" oninput="onColorSelect(event)" checked data-src="/source/img/vaso2.png">
+                    </label>
+                    <label>
+                        <span>Normal</span>
+                        <input type="radio" name="vacarton" style="--color:white" oninput="onColorSelect(event)" data-src="/source/img/vaso1.png">
+                    </label>
+                </div>
+            </form>
+            <form class="colores">
+                <h2>Vasoso de Silicona</h2>
+                <img src="/source/img/vasosil1.png" alt="">
+                <div class="row">
+                    <label>
+                        <span>Normal</span>
+                        <input type="radio" name="vacarton"  style="--color:grey" oninput="onColorSelect(event)" checked data-src="/source/img/vasosil1.png">
+
+                    </label>
+                    <label>
+                        <span>Normal</span>
+                        <input type="radio" name="vacarton" style="--color:#ffa9cb" oninput="onColorSelect(event)" data-src="/source/img/vasosil2.png">
+                    </label>
+                    <label>
+                        <span>Normal</span>
+                        <input type="radio" name="vacarton" style="--color:#bbcae7" oninput="onColorSelect(event)" data-src="/source/img/vasosil3.png">
+                    </label>
+                    <label>
+                        <span>Normal</span>
+                        <input type="radio" name="vacarton" style="--color:#ff6f7b" oninput="onColorSelect(event)" data-src="/source/img/vasosil4.png">
+                    </label>
+                    <label>
+                        <span>Normal</span>
+                        <input type="radio" name="vacarton" style="--color:#a2cb60" oninput="onColorSelect(event)" data-src="/source/img/vasosil5.png">
+                    </label>
+                </div>
+            </form>
+            <form class="colores">
+                <h2>Pajitas Metalicas</h2>
+                <img src="/source/img/pajitatrans1.png" alt="">
+                <div class="row">
+                    <label>
+                        <span>Normal</span>
+                        <input type="radio" name="vacarton"  style="--color:black" oninput="onColorSelect(event)" checked data-src="/source/img/pajitatrans1.png">
+                    </label>
+                    <label>
+                        <span>Normal</span>
+                        <input type="radio" name="vacarton" style="--color:#efb69a" oninput="onColorSelect(event)" data-src="/source/img/pajitatrans2.png">
+                    </label>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

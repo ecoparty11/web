@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body{
+    background: #e0e5ec;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    height: 20%;
+}
+
+header > a{
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    place-content: center;
+    text-transform: uppercase;
+}
+
+#menu > a{
+    list-style: none;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 10px;
+    box-shadow: 
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: all 0.3s;
+}
+
+#menu > a:hover{
+    list-style: none;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 10px;
+    box-shadow:
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001,
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9;
+    border-radius: 10px;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    float: left;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+#obras{
+    display: flex;
+    flex-flow: row;
+    place-content: center;
+    margin-top: 3.5em;
+}
+
+#obra{
+    width: 40em;
+}
+
+.contet{
+    margin: 4em auto 0em auto;
+    width: 90%;
+    height: 100%;
+    gap:2em;
+    display: flex;
+    flex-flow: row;
+}
+
+.colores input[type="radio"]{
+    --size:2em;
+    all: unset;
+    background-color: var(--color, #888);
+    width: var(--size);
+    height: var(--size);
+    display: block;
+    border-radius: calc(var(--size)/2);
+}
+
+.colores span{
+    display: none;
+}
+
+.colores input[type="radio"]:checked{
+    border: .2em solid black;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-flow: row;
+    gap: .4em;
+}
+form.colores{
+    display: flex;
+    flex-flow: column;
+    place-items: center;
+    width: 100%;
+}
+
+.colores img{
+    width: 20em;
+    height: 18em;
+    object-fit: contain;
+}
+
+form{
+    box-shadow: 
+        inset -7px -7px 20px 0px #fff9,
+        inset -4px -4px 5px 0px #fff9,
+        inset 7px 7px 20px 0px #0002,
+        inset 4px 4px 5px 0px #0001;
+    padding: 1.6em;
+    border-radius: .5em;
+}
+
+aside {
+    min-height: 1em;
+    --width: .4em;
+    border-radius: .2em;
+    margin-left: 1em;
+    padding: 1em;
+    width: max-content;
+    margin: 2em auto;
+    font-weight: bold;
+    padding-left: calc(var(--width) + .8em);
+    background: linear-gradient(to right, var(--primary, transparent) var(--width), var(--secondary, transparent) var(--width));
+}
+
+:root {
+    --primary: hsla(var(--hue), 100%, 50%, 1);
+    --secondary: hsla(var(--hue), 00%, 50%, .2);
+    --hue: 20;
+}
